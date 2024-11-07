@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Home Page 1</h1>
-</body>
+    <div class="container">
+        <div class="story__list"></div>
+        <div class="modal" id="storyModal">
+            <div class="modal-content">
+              <div class="progress-bar"></div>
+              <img src="" alt="Story Image" class="story-image"><br>
+              <span class="story-description"></span>
+              <div class="input">
+                <span>😊</span>
+                <input class="comentInput" type="text" placeholder="Отпрвить комментарии"> 
+                <button class="like"><img src="./images/Icon (3).png" alt=""></button>
+                <button class="send"><img src="./images/Icon (5).png" alt=""></button>
+              </div>
+            </div>
+          </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+    </body>
 </html>
