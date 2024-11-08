@@ -38,6 +38,10 @@
 
 body {
     background-color: #fafafa;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .container {
@@ -58,6 +62,8 @@ body {
     gap: 16px;
     overflow-x: scroll;
     padding-top: 5px;
+    width: 50%;
+    margin: 10px auto;
 }
 
 .story__list::-webkit-scrollbar {
