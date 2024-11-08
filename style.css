@@ -1,9 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
 }
-.navbar{
+
+.navbar {
     display: flex;
     width: 100%;
     height: 56px;
@@ -11,30 +13,41 @@
     justify-content: space-between;
     padding: 12px 480px;
     background-color: #FFFFFF;
-    border-bottom:1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
 }
-.navbar input{
+
+.navbar input {
     width: 208px;
     height: 32px;
     border-radius: 2px;
     border: 1px solid #DBDBDB;
     background-color: #FAFAFA;
-    padding: 10px ;
+    padding: 10px;
 }
-.profile{
+
+.profile {
     width: 24px;
     height: 24px;
     border-radius: 100%;
     background-color: #E6E6E6;
 }
-.functions{
+
+.functions {
     display: flex;
     gap: 16px;
     align-items: center;
-=======
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
 .post-container {
     max-width: 616px;
-    margin: 176px auto;
     border: 1px solid #DBDBDB;
 }
 
@@ -90,7 +103,8 @@
     justify-content: space-between;
 }
 
-.comments-item, .likes-item {
+.comments-item,
+.likes-item {
     display: flex;
     flex-direction: column;
     gap: 8px;
