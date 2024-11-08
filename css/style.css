@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 480px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.navbar input {
+    width: 208px;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid #DBDBDB;
+    background-color: #FAFAFA;
+    padding: 10px;
+}
+
+.profile {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: #E6E6E6;
+}
+
+.functions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.story {
+    margin-top: 32px;
+    border: 1px solid #dbdbdb;
+    padding: 16px;
+}
+
+.story__list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    overflow-x: scroll;
+    padding-top: 5px;
+}
+
+.story__list::-webkit-scrollbar {
+    display: none;
+}
+
+.story__item {
+    .image {
+        width: 64px;
+        height: 64px;
+        padding: 3px;
+        border: 2px solid #cccccc;
+        border-radius: 50%;
+
+        img {
+            cursor: pointer;
+            width: 100%;
+            height: 100%;
+            background-color: #e6e6e6;
+            border-radius: 50%;
+        }
+    }
+
+    p {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 6px;
+        color: #262626;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: none;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.story-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.story-description {
+    color: wheat;
+    margin-top: 10px;
+}
+
+.user-name,
+.description-title {
+    font-weight: bold;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #d6249f;
+    animation: progress 15s linear;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 8px;
+    padding-right: 10px;
+}
+
+.comentInput,
+.placeholder {
+    background: none;
+    color: white;
+    width: 50%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #666;
+    border-radius: 10px;
+}
+
+.like,
+.send {
+    background: none;
+    border: none;
+
+}
+
+.like {
+    padding-left: 100px;
+    padding-right: 5px;
+}
