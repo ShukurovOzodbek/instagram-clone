@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .navbar{
     display: flex;
     width: 100%;
@@ -32,4 +31,80 @@
     display: flex;
     gap: 16px;
     align-items: center;
+=======
+.post-container {
+    max-width: 616px;
+    margin: 176px auto;
+    border: 1px solid #DBDBDB;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 24px;
+}
+
+.left-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.post-img {
+    height: 408px;
+    background-color: #E5E5E5;
+}
+
+.social-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.post-comments {
+    padding: 0 16px 16px;
+}
+
+.post-container span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.post-container p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.gray-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #989898;
+}
+
+.comment-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comments-item, .likes-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.post-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.post-btn {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0095F6;
 }
